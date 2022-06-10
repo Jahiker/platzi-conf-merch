@@ -9,11 +9,24 @@
   justify-items: center;
   width: 30px;
   margin: 0 0 0 0.5em;
+  position: relative;
 }
 .Header-alert {
-  color: #33b13a;
+  background-color: #33b13a;
+  color: #fff;
   font-size: 14px;
   margin-left: 5px;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  position: absolute;
+  right: -5px;
+  top: 27%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 2px solid #fff;
+  box-shadow: 1px 1px 4px 1px #000;
 }
 .Header a {
   text-decoration: none;
