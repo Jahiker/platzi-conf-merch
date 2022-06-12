@@ -43,7 +43,7 @@ const Checkout = () => {
             <div className="Checkout-sidebar">
                 <h3>Precio Total: ${handleSumTotal()}</h3>
                 <Link to="/checkout/information">
-                    <button type='button'>Continuar pedido</button>
+                    <button type='button' disabled={ cart.length == 0 && 'disabled' }>Continuar pedido</button>
                 </Link>
             </div>
         </div>

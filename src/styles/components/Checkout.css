@@ -52,6 +52,14 @@
     outline: none;
 }
 
+.Checkout-sidebar button[disabled] {
+  background: unset;
+  background-color: #f2f2f2;
+  color: #979797;
+  border: #979797;
+  box-shadow: unset;
+}
+
 a {
   text-decoration: none;
 }

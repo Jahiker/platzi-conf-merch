@@ -18,8 +18,12 @@
   "author": "Jahiker Rojas",
   "license": "MIT",
   "dependencies": {
+    "@paypal/react-paypal-js": "^7.8.1",
+    "axios": "^0.27.2",
+    "leaflet": "^1.8.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-leaflet": "^4.0.0",
     "react-router-dom": "^6.3.0"
   },
   "devDependencies": {
@@ -29,6 +33,7 @@
     "@babel/preset-react": "^7.17.12",
     "babel-loader": "^8.2.5",
     "css-loader": "^6.7.1",
+    "dotenv-webpack": "^7.1.0",
     "eslint": "^8.17.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.5.0",
