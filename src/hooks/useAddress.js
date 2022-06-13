@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import axios from 'axios';
 
+const TOKEN = process.env.IP_INFO_TOKEN;
+
 const useAddress = () => {
     const [map, setMap] = useState({});
 
