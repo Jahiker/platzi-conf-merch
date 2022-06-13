@@ -27,10 +27,6 @@ const Information = () => {
             'phone': formData.get('phone')
         }
 
-        console.log('__DATA__:', {
-            buyer
-        })
-
         addToBuyer(buyer);
 
         navigate('/checkout/payment');
