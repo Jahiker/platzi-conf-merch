@@ -1,18 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PlatZiConf Merch Store</title>
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/0560bddf76.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/0560bddf76.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Leaflet Maps -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      crossorigin=""
+    />
 
-</head>
-<body>
+    <link rel="manifest" href="./manifest.json">
+  </head>
+  <body>
     <div id="app"></div>
-</body>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+          navigator.serviceWorker
+            .register('service-worker.js')
+            .then(
+              function (registration) {
+                console.log(
+                  'ServiceWorker registration successful with scope: ',
+                  registration.scope
+                );
+              },
+              function (err) {
+                console.log('ServiceWorker registration failed: ', err);
+              }
+            )
+            .catch(function (err) {
+              console.log(err);
+            });
+        });
+      } else {
+        console.log('service worker is not supported');
+      }
+    </script>
+  </body>
 </html>
